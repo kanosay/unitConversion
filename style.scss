@@ -1,0 +1,80 @@
+@use 'css/reset.scss';
+
+$font-family: "Inter", sans-serif;
+$input-color: #6943FF;
+$back-color: #F4F4F4;
+$border-color: #B295FF;
+$btn-textColor: #3D3D3D;
+$headline-color: #5A537B;
+$paragraph-color: #353535;
+
+body {
+    font-family: $font-family;
+}
+
+.unit {
+    background-color: $input-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        font-size: 28px;
+        font-weight: 800;
+        color: #fff;
+        padding: 20px 0;
+    }
+    input {
+        display: block;
+        text-align: center;
+        background-color: transparent;
+        border: 2px solid $border-color;
+        border-radius: 5px;
+        width: 110px;
+        height: 80px;
+        font-size: 58px;
+        color: #fff;
+        font-weight: 800;
+        &::placeholder {
+            color: #ffffff83;
+        }
+    }
+    button {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        color: $btn-textColor;
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+.result {
+    background-color: $back-color;
+    height: 100vh;
+    overflow: hidden;
+    .measure {
+        border-radius: 5px;
+        background-color: #fff;
+        width: 500px;
+        margin: 0 auto;
+        margin-top: 20px;
+        text-align: center;
+        h2 {
+            font-size: 20px;
+            padding: 20px 0;
+            font-weight: 600;
+            color: $headline-color;
+        }
+        p {
+            font-size: 14px;
+            color: $paragraph-color;
+            padding-bottom: 20px;
+        }
+    }
+    .res {
+        text-align: center;
+        color: #00000042;
+        margin-top: 90px;
+    }
+}
